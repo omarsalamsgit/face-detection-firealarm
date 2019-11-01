@@ -1,0 +1,621 @@
+[
+    {
+        "id": "a5dfb882.24a278",
+        "type": "tab",
+        "label": "Main",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c8f8d4d2.52e9c8",
+        "type": "tab",
+        "label": "MySQL",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "caf36ed6.f5f6b",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9d5841f9.7d1e9",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "96b9da2.94f7328",
+        "type": "MySQLdatabase",
+        "z": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "facedetection",
+        "tz": ""
+    },
+    {
+        "id": "4faf4ca5.ae4754",
+        "type": "ui_group",
+        "z": "",
+        "name": "Thermostat demo",
+        "tab": "8a3dbf28.09f42",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "8a3dbf28.09f42",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Test stuff",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "55b61e9e.d93ba",
+        "type": "rpi-sensehat in",
+        "z": "a5dfb882.24a278",
+        "name": "",
+        "motion": false,
+        "env": true,
+        "stick": false,
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "2190317d.e0892e"
+            ]
+        ]
+    },
+    {
+        "id": "2190317d.e0892e",
+        "type": "change",
+        "z": "a5dfb882.24a278",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.temperature",
+                "pt": "msg",
+                "to": "payload.d.temperature",
+                "tot": "msg"
+            },
+            {
+                "t": "move",
+                "p": "payload.humidity",
+                "pt": "msg",
+                "to": "payload.d.humidity",
+                "tot": "msg"
+            },
+            {
+                "t": "move",
+                "p": "payload.pressure",
+                "pt": "msg",
+                "to": "payload.d.pressure",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 280,
+        "wires": [
+            [
+                "be3e9994.72da38"
+            ]
+        ]
+    },
+    {
+        "id": "be3e9994.72da38",
+        "type": "wiotp out",
+        "z": "a5dfb882.24a278",
+        "authType": "d",
+        "qs": "false",
+        "qsDeviceId": "",
+        "deviceKey": "",
+        "deviceType": "",
+        "deviceId": "",
+        "event": "iotsensor",
+        "format": "json",
+        "qos": "",
+        "name": "",
+        "x": 880,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "e2b79a5.8e72968",
+        "type": "ui_chart",
+        "z": "c8f8d4d2.52e9c8",
+        "name": "24 hours data",
+        "group": "4faf4ca5.ae4754",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "label": "Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#00e68c",
+            "#2d2da8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dca19eb1.9192d",
+        "type": "mysql",
+        "z": "c8f8d4d2.52e9c8",
+        "mydb": "96b9da2.94f7328",
+        "name": "MYSQL",
+        "x": 398,
+        "y": 329,
+        "wires": [
+            [
+                "be422e23.d5de7"
+            ]
+        ]
+    },
+    {
+        "id": "61eab167.5e935",
+        "type": "function",
+        "z": "c8f8d4d2.52e9c8",
+        "name": "Criteria",
+        "func": "var timeE = msg.payload;\n//Restrict the query to pull the last 24hrs\n//of data instead of the whole db\nmsg.payload = (timeE - (1000*60*60*24));\n    node.status({text:msg.payload});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 215,
+        "y": 330,
+        "wires": [
+            [
+                "288f2bc0.87e184"
+            ]
+        ]
+    },
+    {
+        "id": "be422e23.d5de7",
+        "type": "debug",
+        "z": "c8f8d4d2.52e9c8",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 601,
+        "y": 329,
+        "wires": []
+    },
+    {
+        "id": "454e8c6b.973694",
+        "type": "inject",
+        "z": "c8f8d4d2.52e9c8",
+        "name": "Timestamp",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "x": 215,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e302b0a.fbb974",
+        "type": "comment",
+        "z": "c8f8d4d2.52e9c8",
+        "name": "Query and Chart MYSQL",
+        "info": "",
+        "x": 261,
+        "y": 230,
+        "wires": []
+    },
+    {
+        "id": "c71379f9.1472f8",
+        "type": "mysql",
+        "z": "c8f8d4d2.52e9c8",
+        "mydb": "96b9da2.94f7328",
+        "name": "MYSQL",
+        "x": 374,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a5bc0239.985cd",
+        "type": "template",
+        "z": "c8f8d4d2.52e9c8",
+        "name": "Format data",
+        "field": "topic",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "INSERT INTO `facedetection` (`time`,`Location`,`count`,`confidence`,`Temperature`) VALUES ({{time}},{{Location}},{{count}},{{confidence}},{{Temperature}})",
+        "output": "str",
+        "x": 221,
+        "y": 160,
+        "wires": [
+            [
+                "c71379f9.1472f8"
+            ]
+        ]
+    },
+    {
+        "id": "52eb6a61.355644",
+        "type": "comment",
+        "z": "c8f8d4d2.52e9c8",
+        "name": "Insert to MySQL",
+        "info": "",
+        "x": 220,
+        "y": 110,
+        "wires": []
+    },
+    {
+        "id": "288f2bc0.87e184",
+        "type": "template",
+        "z": "c8f8d4d2.52e9c8",
+        "name": "Format query 1",
+        "field": "topic",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "SELECT time,temperature FROM facedetection WHERE time > {{payload}}",
+        "output": "str",
+        "x": 400,
+        "y": 279,
+        "wires": [
+            [
+                "dca19eb1.9192d"
+            ]
+        ]
+    },
+    {
+        "id": "15f5f8e0.0d1277",
+        "type": "change",
+        "z": "c8f8d4d2.52e9c8",
+        "name": "Format data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "(\t  $series := [\t    { \"field\": \"time\", \"label\": \"time label\" },\t    { \"field\": \"temperature\", \"label\": \"Temperature label\" }\t  ];\t  $xaxis := \"time\";\t  [\t    {\t      \"series\": $series.label,\t      \"data\": $series.[\t        (\t          $yaxis := $.field;\t          $$.payload.{\t            \"x\": $lookup($, $xaxis),\t            \"y\": $lookup($, $yaxis)\t          }\t        )\t      ]\t    }\t  ]\t)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 604,
+        "y": 280,
+        "wires": [
+            [
+                "e2b79a5.8e72968"
+            ]
+        ]
+    },
+    {
+        "id": "e7684791.cd75b8",
+        "type": "mysql",
+        "z": "c8f8d4d2.52e9c8",
+        "mydb": "96b9da2.94f7328",
+        "name": "MYSQL",
+        "x": 264,
+        "y": 372,
+        "wires": [
+            [
+                "c408faf3.2b20b8",
+                "15f5f8e0.0d1277"
+            ]
+        ]
+    },
+    {
+        "id": "c408faf3.2b20b8",
+        "type": "debug",
+        "z": "c8f8d4d2.52e9c8",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 594,
+        "y": 372,
+        "wires": []
+    },
+    {
+        "id": "6e4aef11.6482d",
+        "type": "function",
+        "z": "a5dfb882.24a278",
+        "name": "",
+        "func": "d = msg.payload.d;\n\n\nif (msg.command == \"message\") {\n    msg.background=d.background;\n    msg.color=d.color;\n    msg.payload=d.message;\n    msg.topic=\"message\";\n}\nelse if (msg.command == \"alarm\") {\n    msg.payload=\"*,*,\"+ d.color;\n    msg.topic=\"alarm\";\n}\nelse if (msg.command == \"safe\") {\n        msg.payload=\"*,*,\"+ d.color;\n        msg.topic=\"safe\";\n\n}\nelse\n    msg = null;\n    \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 650,
+        "y": 220,
+        "wires": [
+            [
+                "6b2a23f2.f1aadc",
+                "e990a079.3e208",
+                "e7782ac4.7c6d08"
+            ]
+        ]
+    },
+    {
+        "id": "6b2a23f2.f1aadc",
+        "type": "rpi-sensehat out",
+        "z": "a5dfb882.24a278",
+        "name": "",
+        "x": 1110,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8e76ba69.55fb38",
+        "type": "wiotp in",
+        "z": "a5dfb882.24a278",
+        "authType": "d",
+        "deviceKey": "",
+        "deviceType": "",
+        "deviceId": "",
+        "command": "+",
+        "commandType": "g",
+        "qos": 0,
+        "name": "",
+        "x": 330,
+        "y": 220,
+        "wires": [
+            [
+                "6e4aef11.6482d"
+            ]
+        ]
+    },
+    {
+        "id": "3a9a4332.47be3c",
+        "type": "rpi-gpio out",
+        "z": "a5dfb882.24a278",
+        "name": "",
+        "pin": "23",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 1060,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "3bc740fd.c0c01",
+        "type": "inject",
+        "z": "a5dfb882.24a278",
+        "name": "",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 190,
+        "y": 20,
+        "wires": [
+            [
+                "3a9a4332.47be3c"
+            ]
+        ]
+    },
+    {
+        "id": "115b22cc.d4afad",
+        "type": "inject",
+        "z": "a5dfb882.24a278",
+        "name": "",
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 150,
+        "y": 60,
+        "wires": [
+            [
+                "3a9a4332.47be3c"
+            ]
+        ]
+    },
+    {
+        "id": "3acaf677.a3f02a",
+        "type": "debug",
+        "z": "a5dfb882.24a278",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1010,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "8d992429.6a2998",
+        "type": "trigger",
+        "z": "a5dfb882.24a278",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "1",
+        "extend": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "name": "",
+        "x": 940,
+        "y": 60,
+        "wires": [
+            [
+                "3a9a4332.47be3c"
+            ]
+        ]
+    },
+    {
+        "id": "e990a079.3e208",
+        "type": "function",
+        "z": "a5dfb882.24a278",
+        "name": "",
+        "func": "if (msg.topic == \"alarm\"){\nreturn msg;\n} else\nreturn null;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 160,
+        "wires": [
+            [
+                "3acaf677.a3f02a",
+                "8d992429.6a2998"
+            ]
+        ]
+    },
+    {
+        "id": "e7782ac4.7c6d08",
+        "type": "debug",
+        "z": "a5dfb882.24a278",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "x": 1020,
+        "y": 220,
+        "wires": []
+    }
+]

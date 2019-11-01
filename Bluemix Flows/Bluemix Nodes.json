@@ -1,0 +1,2590 @@
+[
+    {
+        "id": "deb0d57.1c46528",
+        "type": "tab",
+        "label": "Main",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "facd53b.d4b52b",
+        "type": "tab",
+        "label": "Dashboard",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "9217173d.ef17d8",
+        "type": "tab",
+        "label": "Fire Alarm ",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "5f928559.3424bc",
+        "type": "tab",
+        "label": "Cloudant History",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b4e56ce7.3f1f",
+        "type": "tab",
+        "label": "Face Counting",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "2bc7b419.ae6ffc",
+        "type": "tab",
+        "label": "Debugging",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "96cfeb5f.56f2a8",
+        "type": "subflow",
+        "name": "Persistence Helper",
+        "info": "",
+        "in": [
+            {
+                "x": 45.5,
+                "y": 85,
+                "wires": [
+                    {
+                        "id": "9d6b8c58.a2df6"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 749.5,
+                "y": 53,
+                "wires": [
+                    {
+                        "id": "65b71af4.4aebf4",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 755,
+                "y": 169,
+                "wires": [
+                    {
+                        "id": "6d4f4bc9.807584",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "9aaa3bd3.ec7668",
+        "type": "ui_group",
+        "z": "",
+        "name": "Faces",
+        "tab": "57126820.be0cc8",
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "6696601c.20ec3",
+        "type": "ui_group",
+        "z": "",
+        "name": "People Counting",
+        "tab": "47332025.24f2a",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fbb3c9ba.061c58",
+        "type": "ui_group",
+        "z": 0,
+        "name": "Humidity",
+        "tab": "47332025.24f2a",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "e5913ec4.05602",
+        "type": "ui_group",
+        "z": 0,
+        "name": "Pressure",
+        "tab": "47332025.24f2a",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "47332025.24f2a",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "db0767f1.834238",
+        "type": "ui_tab",
+        "z": 0,
+        "name": "Test stuff",
+        "icon": "dashboard",
+        "order": 2
+    },
+    {
+        "id": "72682452.6050dc",
+        "type": "ui_base",
+        "z": 0,
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "UTS RPI Node-RED Fire Alarm",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "57126820.be0cc8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "People Counting",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b6af7db9.0fe98",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temperature",
+        "tab": "47332025.24f2a",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c4f3b15e.61ea",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Historical Data",
+        "icon": "dashboard",
+        "order": 6
+    },
+    {
+        "id": "810ff478.9b0f08",
+        "type": "ui_group",
+        "z": "",
+        "name": "hidden_group",
+        "tab": "47332025.24f2a",
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "411f56b2.ed0518",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Toolbar Time",
+        "icon": "home",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5a2d03f.d9238fc",
+        "type": "ui_group",
+        "z": "",
+        "name": "Cloudant History",
+        "tab": "a4160d5.bd231f",
+        "order": 3,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "a4160d5.bd231f",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Sensor Database",
+        "icon": "fa-database",
+        "order": 8,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "82e28935.9be728",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Location",
+        "icon": "fa-location-arrow",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "52797177.45e71",
+        "type": "ui_group",
+        "z": "",
+        "name": "Alarm Location",
+        "tab": "82e28935.9be728",
+        "disp": true,
+        "width": "24",
+        "collapse": false
+    },
+    {
+        "id": "3e77d543.c1882a",
+        "type": "ibmiot in",
+        "z": "deb0d57.1c46528",
+        "authentication": "boundService",
+        "apiKey": "",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "RPI02",
+        "applicationId": "",
+        "deviceType": "RPI",
+        "eventType": "iotsensor",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT App In",
+        "service": "registered",
+        "allDevices": false,
+        "allApplications": false,
+        "allDeviceTypes": false,
+        "allLogicalInterfaces": false,
+        "allEvents": false,
+        "allCommands": false,
+        "allFormats": false,
+        "qos": "0",
+        "x": 100,
+        "y": 320,
+        "wires": [
+            [
+                "959b74b5.6ca1d8",
+                "a34a304b.38da4",
+                "e90fca7b.aebb68",
+                "864473b6.39dbf",
+                "354bc32a.737adc",
+                "beab06c6.524c38"
+            ]
+        ]
+    },
+    {
+        "id": "959b74b5.6ca1d8",
+        "type": "delay",
+        "z": "deb0d57.1c46528",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "minute",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 310,
+        "y": 220,
+        "wires": [
+            [
+                "75facd15.212f94"
+            ]
+        ]
+    },
+    {
+        "id": "75facd15.212f94",
+        "type": "function",
+        "z": "deb0d57.1c46528",
+        "name": "Parse Input",
+        "func": "return {\n    payload: {\n        time: new Date().getTime(),\n        temp: msg.payload.d.temperature,\n        humidity: msg.payload.d.humidity,\n        pressure: msg.payload.d.pressure\n\n    }\n};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 610,
+        "y": 220,
+        "wires": [
+            [
+                "4116afd2.5f895",
+                "93550568.0aa028"
+            ]
+        ]
+    },
+    {
+        "id": "4116afd2.5f895",
+        "type": "cloudant out",
+        "z": "deb0d57.1c46528",
+        "name": "",
+        "cloudant": "",
+        "database": "temperatures",
+        "service": "utsrpi2-cloudantNoSQLDB",
+        "payonly": true,
+        "operation": "insert",
+        "x": 830,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "bfdb36c2.b0ede8",
+        "type": "http in",
+        "z": "deb0d57.1c46528",
+        "name": "",
+        "url": "/api/reading",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 260,
+        "y": 602,
+        "wires": [
+            [
+                "7f9ded68.f34314"
+            ]
+        ]
+    },
+    {
+        "id": "7f9ded68.f34314",
+        "type": "cloudant in",
+        "z": "deb0d57.1c46528",
+        "name": "",
+        "cloudant": "",
+        "database": "temperatures",
+        "service": "utsrpi2-cloudantNoSQLDB",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 500,
+        "y": 602,
+        "wires": [
+            [
+                "eae726fc.0ae698"
+            ]
+        ]
+    },
+    {
+        "id": "eae726fc.0ae698",
+        "type": "http response",
+        "z": "deb0d57.1c46528",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 602,
+        "wires": []
+    },
+    {
+        "id": "a34a304b.38da4",
+        "type": "change",
+        "z": "deb0d57.1c46528",
+        "name": "Temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.d.temperature",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 360,
+        "wires": [
+            [
+                "cf5ed57.1e51928"
+            ]
+        ]
+    },
+    {
+        "id": "e90fca7b.aebb68",
+        "type": "change",
+        "z": "deb0d57.1c46528",
+        "name": "Humidity",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.d.humidity",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 440,
+        "wires": [
+            [
+                "7148ffdf.e0b93"
+            ]
+        ]
+    },
+    {
+        "id": "864473b6.39dbf",
+        "type": "change",
+        "z": "deb0d57.1c46528",
+        "name": "Pressure",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.d.pressure",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 400,
+        "wires": [
+            [
+                "9a2705d6.03d348"
+            ]
+        ]
+    },
+    {
+        "id": "beab06c6.524c38",
+        "type": "delay",
+        "z": "deb0d57.1c46528",
+        "name": "Schedule Reminder",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "7",
+        "rateUnits": "day",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 330,
+        "y": 120,
+        "wires": [
+            [
+                "4d0fce42.3c2b4"
+            ]
+        ]
+    },
+    {
+        "id": "4d0fce42.3c2b4",
+        "type": "template",
+        "z": "deb0d57.1c46528",
+        "name": "Reminder Email",
+        "field": "payload",
+        "fieldType": "msg",
+        "syntax": "mustache",
+        "template": "Please remember to perform a maintenance check on your entire system. \nCheck Nodes, Watson and Twilio.",
+        "x": 620,
+        "y": 120,
+        "wires": [
+            [
+                "b9f5982f.7e7be8"
+            ]
+        ]
+    },
+    {
+        "id": "b9f5982f.7e7be8",
+        "type": "e-mail",
+        "z": "deb0d57.1c46528",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "Email",
+        "x": 850,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "65b71af4.4aebf4",
+        "type": "change",
+        "z": "96cfeb5f.56f2a8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "action",
+                "pt": "msg",
+                "to": "restore",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 589.5,
+        "y": 53,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d6b8c58.a2df6",
+        "type": "json",
+        "z": "96cfeb5f.56f2a8",
+        "name": "",
+        "x": 175.5,
+        "y": 85,
+        "wires": [
+            [
+                "65b71af4.4aebf4"
+            ]
+        ]
+    },
+    {
+        "id": "6f229730.8dd8f8",
+        "type": "catch",
+        "z": "96cfeb5f.56f2a8",
+        "name": "",
+        "scope": [
+            "9d6b8c58.a2df6"
+        ],
+        "x": 183.5,
+        "y": 117,
+        "wires": [
+            [
+                "e61b7a28.be1548"
+            ]
+        ]
+    },
+    {
+        "id": "e61b7a28.be1548",
+        "type": "change",
+        "z": "96cfeb5f.56f2a8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 354.5,
+        "y": 116,
+        "wires": [
+            [
+                "65b71af4.4aebf4"
+            ]
+        ]
+    },
+    {
+        "id": "6d4f4bc9.807584",
+        "type": "inject",
+        "z": "96cfeb5f.56f2a8",
+        "name": "Trigger restore",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "x": 618.5,
+        "y": 169,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6bd3b7b9.4ee348",
+        "type": "firebase.on",
+        "z": "b4e56ce7.3f1f",
+        "name": "Confidence",
+        "firebaseconfig": "",
+        "childpath": "/count/Confidence",
+        "atStart": true,
+        "eventType": "value",
+        "queries": [],
+        "x": 230,
+        "y": 160,
+        "wires": [
+            [
+                "af19e771.d6dc18"
+            ]
+        ]
+    },
+    {
+        "id": "1d6ae0b9.fba99f",
+        "type": "firebase.on",
+        "z": "b4e56ce7.3f1f",
+        "name": "Face Count",
+        "firebaseconfig": "",
+        "childpath": "/count/Faces",
+        "atStart": true,
+        "eventType": "value",
+        "queries": [],
+        "x": 230,
+        "y": 220,
+        "wires": [
+            [
+                "5c40401d.dad57"
+            ]
+        ]
+    },
+    {
+        "id": "fa42f719.fcf388",
+        "type": "firebase.on",
+        "z": "b4e56ce7.3f1f",
+        "name": "Timestamp",
+        "firebaseconfig": "",
+        "childpath": "/count/Timestamp",
+        "atStart": true,
+        "eventType": "value",
+        "queries": [
+            {
+                "name": "orderByChild",
+                "value": "*"
+            }
+        ],
+        "x": 220,
+        "y": 280,
+        "wires": [
+            [
+                "4bdc787b.120fc8"
+            ]
+        ]
+    },
+    {
+        "id": "1de34c24.e41324",
+        "type": "inject",
+        "z": "5f928559.3424bc",
+        "name": "Reset Database load",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "x": 180,
+        "y": 80,
+        "wires": [
+            [
+                "2ead0e72.efa592"
+            ]
+        ]
+    },
+    {
+        "id": "2ead0e72.efa592",
+        "type": "change",
+        "z": "5f928559.3424bc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "db-loaded",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 80,
+        "wires": [
+            [
+                "f2342b24.e052f8"
+            ]
+        ]
+    },
+    {
+        "id": "4ef056fc.2d29a8",
+        "type": "inject",
+        "z": "5f928559.3424bc",
+        "name": "",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "f2342b24.e052f8"
+            ]
+        ]
+    },
+    {
+        "id": "f2342b24.e052f8",
+        "type": "switch",
+        "z": "5f928559.3424bc",
+        "name": "Load Asset Database",
+        "property": "db-loaded",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 420,
+        "y": 160,
+        "wires": [
+            [
+                "a0f40838.bf6368"
+            ],
+            []
+        ],
+        "outputLabels": [
+            "IoTP Target DB not loaded",
+            "IoTP Target DB loaded"
+        ]
+    },
+    {
+        "id": "a0f40838.bf6368",
+        "type": "cloudant in",
+        "z": "5f928559.3424bc",
+        "name": "",
+        "cloudant": "",
+        "database": "temperatures",
+        "service": "utsrpi2-cloudantNoSQLDB",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 630,
+        "y": 160,
+        "wires": [
+            [
+                "cb98535b.83ae"
+            ]
+        ]
+    },
+    {
+        "id": "7ea93659.53ced8",
+        "type": "debug",
+        "z": "5f928559.3424bc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1090,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "895c0944.0d25d8",
+        "type": "inject",
+        "z": "5f928559.3424bc",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "x": 150,
+        "y": 220,
+        "wires": [
+            [
+                "41ac7e99.f8659"
+            ]
+        ]
+    },
+    {
+        "id": "41ac7e99.f8659",
+        "type": "function",
+        "z": "5f928559.3424bc",
+        "name": "Build an Table",
+        "func": "var AssetList = global.get(\"temperatures\");\nif (typeof AssetList == 'undefined') {\n    return null;\n}\n\nmsg.template=\"<style>h4 { text-align: center; margin: 10px; }\";\nmsg.template=msg.template+\"table {    width: 500px; height:650px   margin-top: 10px; }\";\nmsg.template=msg.template+\"th, td { padding: 8px; text-align: left; border-bottom: 1px solid #0eb8c0; width: 50%;color:white;}\";\nmsg.template=msg.template+\".classifier {background-color: rgb(85,150,230);text-align: center;}\";\nmsg.template=msg.template+\".title { background-color:White;}</style>\";\n\nmsg.template=msg.template+\"<table span=100%><tr><th>Time</th><th>Temperature</th><th>Humidity</th><th>Presure</th></tr>\";\n\nfor (var i = AssetList.length-1; i >= 0; i--)  {\n  msg.template = msg.template + \"<tr><td>\" + AssetList[i].time + \"</td><td>\" + AssetList[i].temp + \"</td><td>\" + AssetList[i].humidity + \"</td><td>\" +AssetList[i].pressure + \"</td></tr>\";\n}\nmsg.template = msg.template + \"</table>\"\n\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 220,
+        "wires": [
+            [
+                "7940a308.56d55c"
+            ]
+        ]
+    },
+    {
+        "id": "cb98535b.83ae",
+        "type": "change",
+        "z": "5f928559.3424bc",
+        "name": "Store DB in Global variable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temperatures",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "db-loaded",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 160,
+        "wires": [
+            [
+                "7ea93659.53ced8"
+            ]
+        ]
+    },
+    {
+        "id": "354bc32a.737adc",
+        "type": "link out",
+        "z": "deb0d57.1c46528",
+        "name": "IOT Sensors Link",
+        "links": [],
+        "x": 435,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "3b9a3b57.6d4cf4",
+        "type": "comment",
+        "z": "facd53b.d4b52b",
+        "name": "[Home] Sensors",
+        "info": "",
+        "x": 180,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "97035278.14cf3",
+        "type": "ui_gauge",
+        "z": "facd53b.d4b52b",
+        "name": "",
+        "group": "fbb3c9ba.061c58",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "10",
+        "seg2": "30",
+        "x": 300,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6605be14.3ecf5",
+        "type": "ui_gauge",
+        "z": "facd53b.d4b52b",
+        "name": "",
+        "group": "e5913ec4.05602",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Pressure",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "min": "500",
+        "max": "2000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "600",
+        "seg2": "900",
+        "x": 300,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "509d1f43.e67a5",
+        "type": "ui_text",
+        "z": "facd53b.d4b52b",
+        "group": "e5913ec4.05602",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Pressure",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 300,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "411a3aef.c3e784",
+        "type": "ui_text",
+        "z": "facd53b.d4b52b",
+        "group": "fbb3c9ba.061c58",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Humidity",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 300,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "51cd7e81.42da7",
+        "type": "ui_chart",
+        "z": "facd53b.d4b52b",
+        "name": "Humidity",
+        "group": "fbb3c9ba.061c58",
+        "order": 1,
+        "width": "",
+        "height": "",
+        "label": "Humidity",
+        "chartType": "line",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "No Data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": "",
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": true,
+        "outputs": 1,
+        "x": 300,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "742f74ca.7c423c",
+        "type": "ui_chart",
+        "z": "facd53b.d4b52b",
+        "name": "Pressure",
+        "group": "e5913ec4.05602",
+        "order": 1,
+        "width": "",
+        "height": "",
+        "label": "Pressure",
+        "chartType": "line",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "No Data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": "",
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": true,
+        "outputs": 1,
+        "x": 300,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9a2705d6.03d348",
+        "type": "link out",
+        "z": "deb0d57.1c46528",
+        "name": "Pressure Link",
+        "links": [
+            "3ec9bcd3.7628c4"
+        ],
+        "x": 435,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "7148ffdf.e0b93",
+        "type": "link out",
+        "z": "deb0d57.1c46528",
+        "name": "Humidity Link",
+        "links": [
+            "8b7c1a2a.36d878"
+        ],
+        "x": 435,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "3ec9bcd3.7628c4",
+        "type": "link in",
+        "z": "facd53b.d4b52b",
+        "name": "Dash Pressure In",
+        "links": [
+            "9a2705d6.03d348"
+        ],
+        "x": 115,
+        "y": 220,
+        "wires": [
+            [
+                "509d1f43.e67a5",
+                "742f74ca.7c423c",
+                "6605be14.3ecf5"
+            ]
+        ]
+    },
+    {
+        "id": "8b7c1a2a.36d878",
+        "type": "link in",
+        "z": "facd53b.d4b52b",
+        "name": "Dash Humidity In",
+        "links": [
+            "7148ffdf.e0b93"
+        ],
+        "x": 115,
+        "y": 360,
+        "wires": [
+            [
+                "411a3aef.c3e784",
+                "51cd7e81.42da7",
+                "97035278.14cf3"
+            ]
+        ]
+    },
+    {
+        "id": "cf5ed57.1e51928",
+        "type": "link out",
+        "z": "deb0d57.1c46528",
+        "name": "Temperature Link",
+        "links": [
+            "7d448380.29d06c",
+            "44fba1be.054ed",
+            "f7b06d21.0b88a"
+        ],
+        "x": 435,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "bd282866.edcdd8",
+        "type": "ui_text",
+        "z": "facd53b.d4b52b",
+        "group": "b6af7db9.0fe98",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temperature",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 310,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "c80e7cb1.5f18e",
+        "type": "ui_chart",
+        "z": "facd53b.d4b52b",
+        "name": "Temperature",
+        "group": "b6af7db9.0fe98",
+        "order": 1,
+        "width": "",
+        "height": "",
+        "label": "",
+        "chartType": "line",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "No Data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": "",
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": true,
+        "outputs": 1,
+        "x": 310,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a991500.745bfb",
+        "type": "ui_gauge",
+        "z": "facd53b.d4b52b",
+        "name": "",
+        "group": "b6af7db9.0fe98",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "C",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "40",
+        "seg2": "70",
+        "x": 310,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "7d448380.29d06c",
+        "type": "link in",
+        "z": "facd53b.d4b52b",
+        "name": "Dash Temp In",
+        "links": [
+            "cf5ed57.1e51928"
+        ],
+        "x": 115,
+        "y": 500,
+        "wires": [
+            [
+                "c80e7cb1.5f18e",
+                "bd282866.edcdd8",
+                "a991500.745bfb"
+            ]
+        ]
+    },
+    {
+        "id": "6588ee07.367e",
+        "type": "ui_template",
+        "z": "facd53b.d4b52b",
+        "group": "810ff478.9b0f08",
+        "name": "Clock Toolbar",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "format": "<script id=\"titleScript\" type=\"text/javascript\">\n\n$(function() {\n    if($('.md-toolbar-tools').length != 0){\n        loadClock();\n    }else setTimeout(loadClock, 500)\n});\n\nfunction loadClock(){\n    $('#clock').remove();\n    var toolbar = $('.md-toolbar-tools');\n    \n    var div = $('<div/>');\n    var p = $('<p/ id=\"clock\">');\n    \n    div.append(p);\n    div[0].style.margin = '5px 5px 5px auto';\n    toolbar.append(div);\n\n    function displayTitle(lh) {\n        p.text(lh); \n    }\n    \n    function upTime() {\n        var d = new Date();\n        p.text(d.toLocaleString());\n    }\n\n    if(document.clockInterval){ \n            clearInterval(document.clockInterval);\n            document.clockInterval = null;\n    }\n        \n    document.clockInterval = setInterval(upTime,1000);\n}\n\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "templateScope": "global",
+        "x": 180,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7940a308.56d55c",
+        "type": "link out",
+        "z": "5f928559.3424bc",
+        "name": "Cloudant History Out",
+        "links": [
+            "ecbf1f03.13938"
+        ],
+        "x": 515,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "cea00aa9.dbb718",
+        "type": "ui_template",
+        "z": "facd53b.d4b52b",
+        "group": "5a2d03f.d9238fc",
+        "name": "Cloudant History",
+        "order": 0,
+        "width": "12",
+        "height": "7",
+        "format": "<div ng-bind-html=\"msg.template\"></div>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "templateScope": "local",
+        "x": 620,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ecbf1f03.13938",
+        "type": "link in",
+        "z": "facd53b.d4b52b",
+        "name": "Cloudant History In",
+        "links": [
+            "7940a308.56d55c"
+        ],
+        "x": 475,
+        "y": 220,
+        "wires": [
+            [
+                "cea00aa9.dbb718"
+            ]
+        ]
+    },
+    {
+        "id": "45e7937f.af638c",
+        "type": "comment",
+        "z": "facd53b.d4b52b",
+        "name": "Sensor History",
+        "info": "",
+        "x": 540,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "cd7c6494.837578",
+        "type": "comment",
+        "z": "deb0d57.1c46528",
+        "name": "Receive Pi Data",
+        "info": "",
+        "x": 100,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "2b0abb9f.3b2ec4",
+        "type": "comment",
+        "z": "deb0d57.1c46528",
+        "name": "Weekly Maintenance Reminder",
+        "info": "",
+        "x": 370,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "48138edb.2bc63",
+        "type": "comment",
+        "z": "deb0d57.1c46528",
+        "name": "Store Pi Data into Cloudant DB",
+        "info": "",
+        "x": 370,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "954a0296.acd3b",
+        "type": "comment",
+        "z": "deb0d57.1c46528",
+        "name": "Output Sensor Data",
+        "info": "",
+        "x": 590,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "9a60163b.65bfc8",
+        "type": "comment",
+        "z": "deb0d57.1c46528",
+        "name": "Display Cloudant JSON on HTTP",
+        "info": "",
+        "x": 310,
+        "y": 562,
+        "wires": []
+    },
+    {
+        "id": "38d9d636.44ae7a",
+        "type": "switch",
+        "z": "9217173d.ef17d8",
+        "name": "temp thresh",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "70",
+                "vt": "str"
+            },
+            {
+                "t": "gt",
+                "v": "70",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 200,
+        "wires": [
+            [
+                "8d4bfa0c.37acb8",
+                "9252e6cf.2a0b38"
+            ],
+            [
+                "9252e6cf.2a0b38",
+                "dcc804d2.d81bf8"
+            ]
+        ]
+    },
+    {
+        "id": "8d4bfa0c.37acb8",
+        "type": "template",
+        "z": "9217173d.ef17d8",
+        "name": "safe",
+        "field": "payload",
+        "fieldType": "msg",
+        "syntax": "mustache",
+        "template": "Temperature ({{payload}}) within safe limits",
+        "x": 470,
+        "y": 180,
+        "wires": [
+            [
+                "6e9dc347.06348c"
+            ]
+        ]
+    },
+    {
+        "id": "dcc804d2.d81bf8",
+        "type": "template",
+        "z": "9217173d.ef17d8",
+        "name": "danger",
+        "field": "payload",
+        "fieldType": "msg",
+        "syntax": "mustache",
+        "template": "Temperature ({{payload}}) critical ! Fire maybe present\n\nThe location is CB11 - North West - Door 1 \n\nPlease checked the map at the dashboard ASAP. \n",
+        "x": 470,
+        "y": 220,
+        "wires": [
+            [
+                "25eb6054.6377e",
+                "79d334de.a0a93c"
+            ]
+        ]
+    },
+    {
+        "id": "d0e7d302.f7228",
+        "type": "twilio out",
+        "z": "9217173d.ef17d8",
+        "service": "_ext_",
+        "twilio": "",
+        "from": "",
+        "number": "",
+        "name": "Number",
+        "x": 1000,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "25eb6054.6377e",
+        "type": "delay",
+        "z": "9217173d.ef17d8",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "2",
+        "nbRateUnits": "1",
+        "rateUnits": "minute",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 710,
+        "y": 360,
+        "wires": [
+            [
+                "9ac0169.dfa16e8",
+                "d0e7d302.f7228",
+                "69c768c8.605358"
+            ]
+        ]
+    },
+    {
+        "id": "9252e6cf.2a0b38",
+        "type": "join",
+        "z": "9217173d.ef17d8",
+        "name": "",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 250,
+        "y": 280,
+        "wires": [
+            [
+                "9870865f.fa45e8"
+            ]
+        ]
+    },
+    {
+        "id": "9870865f.fa45e8",
+        "type": "template",
+        "z": "9217173d.ef17d8",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This is the payload: {{payload}} !",
+        "output": "str",
+        "x": 260,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "69c768c8.605358",
+        "type": "e-mail",
+        "z": "9217173d.ef17d8",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "Email",
+        "x": 990,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "40fabb63.595fb4",
+        "type": "function",
+        "z": "9217173d.ef17d8",
+        "name": "",
+        "func": "msg.eventOrCommandType =\"alarm\";\n\nmsg.payload={d:{color:msg.payload}};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 990,
+        "y": 220,
+        "wires": [
+            [
+                "5624bafe.dcd6e4"
+            ]
+        ]
+    },
+    {
+        "id": "5624bafe.dcd6e4",
+        "type": "ibmiot out",
+        "z": "9217173d.ef17d8",
+        "authentication": "boundService",
+        "apiKey": "",
+        "outputType": "cmd",
+        "deviceId": "RPI02",
+        "deviceType": "RPI",
+        "eventCommandType": "n/a",
+        "format": "json",
+        "data": "n/a",
+        "qos": 0,
+        "name": "IBM IoT",
+        "service": "registered",
+        "x": 1200,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "79d334de.a0a93c",
+        "type": "trigger",
+        "z": "9217173d.ef17d8",
+        "op1": "red",
+        "op2": "white",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "1000",
+        "extend": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "name": "",
+        "x": 720,
+        "y": 220,
+        "wires": [
+            [
+                "40fabb63.595fb4"
+            ]
+        ]
+    },
+    {
+        "id": "c40bcdd8.349c5",
+        "type": "function",
+        "z": "9217173d.ef17d8",
+        "name": "",
+        "func": "msg.eventOrCommandType =\"safe\";\n\nmsg.payload={d:{color:\"off\"}};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 990,
+        "y": 180,
+        "wires": [
+            [
+                "5624bafe.dcd6e4"
+            ]
+        ]
+    },
+    {
+        "id": "9ac0169.dfa16e8",
+        "type": "ui_toast",
+        "z": "9217173d.ef17d8",
+        "position": "top right",
+        "displayTime": "10",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "topic": "",
+        "name": "",
+        "x": 1020,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "6e9dc347.06348c",
+        "type": "delay",
+        "z": "9217173d.ef17d8",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "6",
+        "nbRateUnits": "1",
+        "rateUnits": "hour",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 710,
+        "y": 180,
+        "wires": [
+            [
+                "c40bcdd8.349c5"
+            ]
+        ]
+    },
+    {
+        "id": "f7b06d21.0b88a",
+        "type": "link in",
+        "z": "9217173d.ef17d8",
+        "name": "",
+        "links": [
+            "cf5ed57.1e51928"
+        ],
+        "x": 115,
+        "y": 200,
+        "wires": [
+            [
+                "38d9d636.44ae7a"
+            ]
+        ]
+    },
+    {
+        "id": "725769d7.82bec8",
+        "type": "comment",
+        "z": "9217173d.ef17d8",
+        "name": "Temperature Alarm System",
+        "info": "",
+        "x": 210,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "c7d83a84.b720f8",
+        "type": "comment",
+        "z": "9217173d.ef17d8",
+        "name": "Remote Alerts",
+        "info": "",
+        "x": 710,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "9382d04c.8831",
+        "type": "comment",
+        "z": "9217173d.ef17d8",
+        "name": "Device Alerts",
+        "info": "",
+        "x": 710,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "af19e771.d6dc18",
+        "type": "link out",
+        "z": "b4e56ce7.3f1f",
+        "name": "Confidence Out",
+        "links": [
+            "f603a747.3c83a8"
+        ],
+        "x": 355,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5c40401d.dad57",
+        "type": "link out",
+        "z": "b4e56ce7.3f1f",
+        "name": "People Count Out",
+        "links": [
+            "e0392075.a64fa"
+        ],
+        "x": 355,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "4bdc787b.120fc8",
+        "type": "link out",
+        "z": "b4e56ce7.3f1f",
+        "name": "People Timestamp Out",
+        "links": [
+            "f44a8905.465608"
+        ],
+        "x": 355,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "12fb1d31.5fdbc3",
+        "type": "ui_text",
+        "z": "facd53b.d4b52b",
+        "group": "6696601c.20ec3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Current Confidence",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 330,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "f94ffacf.d958e8",
+        "type": "ui_text",
+        "z": "facd53b.d4b52b",
+        "group": "6696601c.20ec3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Current Faces",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 320,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "bef994aa.db13c8",
+        "type": "ui_chart",
+        "z": "facd53b.d4b52b",
+        "name": "Faces",
+        "group": "9aaa3bd3.ec7668",
+        "order": 1,
+        "width": "",
+        "height": "",
+        "label": "Current People",
+        "chartType": "line",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "No Data",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "4",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": "",
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": true,
+        "outputs": 1,
+        "x": 290,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9eb449b2.6553f8",
+        "type": "ui_text",
+        "z": "facd53b.d4b52b",
+        "group": "6696601c.20ec3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Last Timestamp",
+        "label": "Last Timestamp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 320,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "e0392075.a64fa",
+        "type": "link in",
+        "z": "facd53b.d4b52b",
+        "name": "Current People In",
+        "links": [
+            "5c40401d.dad57"
+        ],
+        "x": 115,
+        "y": 700,
+        "wires": [
+            [
+                "bef994aa.db13c8",
+                "f94ffacf.d958e8"
+            ]
+        ]
+    },
+    {
+        "id": "f603a747.3c83a8",
+        "type": "link in",
+        "z": "facd53b.d4b52b",
+        "name": "Current Confidence In",
+        "links": [
+            "af19e771.d6dc18"
+        ],
+        "x": 115,
+        "y": 620,
+        "wires": [
+            [
+                "12fb1d31.5fdbc3"
+            ]
+        ]
+    },
+    {
+        "id": "f44a8905.465608",
+        "type": "link in",
+        "z": "facd53b.d4b52b",
+        "name": "Last Timestamp In",
+        "links": [
+            "4bdc787b.120fc8"
+        ],
+        "x": 115,
+        "y": 780,
+        "wires": [
+            [
+                "9eb449b2.6553f8"
+            ]
+        ]
+    },
+    {
+        "id": "d5a97a0a.5c8108",
+        "type": "link in",
+        "z": "facd53b.d4b52b",
+        "name": "Location Map Embed In",
+        "links": [
+            "3e051c0c.c43d94",
+            "8571f0b8.057a1"
+        ],
+        "x": 855,
+        "y": 220,
+        "wires": [
+            [
+                "4e3d490d.fb7c78"
+            ]
+        ]
+    },
+    {
+        "id": "4e3d490d.fb7c78",
+        "type": "ui_template",
+        "z": "facd53b.d4b52b",
+        "group": "52797177.45e71",
+        "name": "Alarm Location",
+        "order": 0,
+        "width": "24",
+        "height": "24",
+        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 1020,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4cc8c620.d0a238",
+        "type": "comment",
+        "z": "facd53b.d4b52b",
+        "name": "Alarm Location Map",
+        "info": "",
+        "x": 930,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "93550568.0aa028",
+        "type": "debug",
+        "z": "deb0d57.1c46528",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 820,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d7006f9d.9ca5f",
+        "type": "comment",
+        "z": "b4e56ce7.3f1f",
+        "name": "Read Face Count from PI Cam",
+        "info": "",
+        "x": 250,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "124deeeb.565101",
+        "type": "comment",
+        "z": "5f928559.3424bc",
+        "name": "Read DB History",
+        "info": "",
+        "x": 140,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "74358a65.4e7ba4",
+        "type": "inject",
+        "z": "2bc7b419.ae6ffc",
+        "name": "Green LED",
+        "topic": "alarm",
+        "payload": "green",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "x": 160,
+        "y": 220,
+        "wires": [
+            [
+                "4a5da2cd.2e5b9c"
+            ]
+        ]
+    },
+    {
+        "id": "4a5da2cd.2e5b9c",
+        "type": "function",
+        "z": "2bc7b419.ae6ffc",
+        "name": "format : command test",
+        "func": "msg.eventOrCommandType = msg.topic;\nif (msg.topic == \"alarm\") {  \n    msg.payload={d:{color:msg.payload}};\n}\nelse if (msg.topic == \"message\") {  \n    msg.payload={d:{color:\"navy\",\n    background:\"black\",            \n    message:msg.payload}};\n}\nelse  msg = null;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 440,
+        "y": 180,
+        "wires": [
+            [
+                "ba04bd11.f8cd3",
+                "e529c4ad.b59668"
+            ]
+        ]
+    },
+    {
+        "id": "ddfe468.61c7eb8",
+        "type": "inject",
+        "z": "2bc7b419.ae6ffc",
+        "name": "LED off",
+        "topic": "alarm",
+        "payload": "off",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "4a5da2cd.2e5b9c"
+            ]
+        ]
+    },
+    {
+        "id": "3b3d8cfa.449594",
+        "type": "inject",
+        "z": "2bc7b419.ae6ffc",
+        "name": "Message",
+        "topic": "message",
+        "payload": "test message",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "x": 160,
+        "y": 300,
+        "wires": [
+            [
+                "4a5da2cd.2e5b9c"
+            ]
+        ]
+    },
+    {
+        "id": "9e0407e.fa86ef8",
+        "type": "inject",
+        "z": "2bc7b419.ae6ffc",
+        "name": "Red LED",
+        "topic": "alarm",
+        "payload": "red",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "x": 160,
+        "y": 260,
+        "wires": [
+            [
+                "4a5da2cd.2e5b9c"
+            ]
+        ]
+    },
+    {
+        "id": "ba04bd11.f8cd3",
+        "type": "ibmiot out",
+        "z": "2bc7b419.ae6ffc",
+        "authentication": "boundService",
+        "apiKey": "",
+        "outputType": "cmd",
+        "deviceId": "RPI02",
+        "deviceType": "RPI",
+        "eventCommandType": "n/a",
+        "format": "json",
+        "data": "n/a",
+        "qos": 0,
+        "name": "IBM IoT",
+        "service": "registered",
+        "x": 663,
+        "y": 177,
+        "wires": []
+    },
+    {
+        "id": "e529c4ad.b59668",
+        "type": "debug",
+        "z": "2bc7b419.ae6ffc",
+        "name": "debug : IoT commands",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "complete": "true",
+        "x": 440,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "943f46f4.aaba98",
+        "type": "Firestore in",
+        "z": "b4e56ce7.3f1f",
+        "name": "Firestore Read",
+        "collection": "fullcount",
+        "group": true,
+        "document": "",
+        "realtime": true,
+        "query": [],
+        "admin": "",
+        "x": 220,
+        "y": 480,
+        "wires": [
+            [
+                "fe7bbdc2.f413d"
+            ]
+        ]
+    },
+    {
+        "id": "8b3db35c.445ed",
+        "type": "debug",
+        "z": "b4e56ce7.3f1f",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.time",
+        "targetType": "msg",
+        "x": 850,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "fe7bbdc2.f413d",
+        "type": "json",
+        "z": "b4e56ce7.3f1f",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": true,
+        "x": 246.28556060791016,
+        "y": 522.7142105102539,
+        "wires": [
+            [
+                "ede50d94.ffecd"
+            ]
+        ]
+    },
+    {
+        "id": "ede50d94.ffecd",
+        "type": "change",
+        "z": "b4e56ce7.3f1f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.*.Faces[*]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 447.2856140136719,
+        "y": 424.8570804595947,
+        "wires": [
+            [
+                "4fa516f8.00eee8"
+            ]
+        ]
+    },
+    {
+        "id": "4fa516f8.00eee8",
+        "type": "function",
+        "z": "b4e56ce7.3f1f",
+        "name": "",
+        "func": "var j, newmsg;\n\n\nvar j_list = (msg['payload']);\nfor (var j_index in j_list) {\n  j = j_list[j_index];\n  newmsg={};\n  newmsg['payload'] = j;\n  flow.set('last', (flow.get('current')));\n  flow.set('current', (newmsg['payload']));\n  node.send([newmsg]);\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 440.2859992980957,
+        "y": 522.8574485778809,
+        "wires": [
+            [
+                "58aeb910.630d48",
+                "527f747e.41a09c"
+            ]
+        ]
+    },
+    {
+        "id": "58aeb910.630d48",
+        "type": "function",
+        "z": "b4e56ce7.3f1f",
+        "name": "faces",
+        "func": "var topic=msg.topic;\nmsg.topic= \"faces\";\nvar newMsg = { payload: msg.payload.Faces,topic:msg.topic };\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 742.7146911621094,
+        "y": 466.1432456970215,
+        "wires": [
+            [
+                "b97af9a.2f30808"
+            ]
+        ]
+    },
+    {
+        "id": "f9c08e63.76d9b",
+        "type": "function",
+        "z": "b4e56ce7.3f1f",
+        "name": "Add Time",
+        "func": "// Given a payload value adds the current time into this and passes it on\n// as a hash containing {x: current_time, y: payload}\nmsg.payload = {x: msg.payload.time, y: msg.payload.faces};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 960,
+        "y": 440,
+        "wires": [
+            [
+                "655df27a.04acdc",
+                "9575dc68.a2013"
+            ]
+        ]
+    },
+    {
+        "id": "9575dc68.a2013",
+        "type": "function",
+        "z": "b4e56ce7.3f1f",
+        "name": "Chart Helper",
+        "func": "// A helper for the node-red chart.js template node\n// see the template node for the majority of the user defined data\n// here all that is needed is to setup values to limit the length of the chart\n// Firstly chartMaxPoints may be set non-zero and (for each channel) when the number\n// of points exceeds this value then the oldest samples will be discarded.\n// Alternatively (or in addition) if the x axis is time based then chartTimeSpan (milliseconds)\n// may be set and then old samples will be discarded to limit the chart to this time span.\n\nvar chartMaxPoints = 0;             //max no points in a chart before they drop off the left. Set to zero to disable\nvar chartTimeSpan = 4*60*1000;     //chart time span 4 mins. Set to zero to disable\n\n// ----------------------------------------------------------\n// You should not need to change anything below here\n\n// with inputs connected to the same nodes as a chart.js node this maintains a chart history\n// for preloading into the chart when it is opened in the browser\n\nvar topicsOfinterest = context.get('topicsOfInterest');    // can't use null here\nif (typeof topicsOfInterest == 'undefined') topicsOfInterest = null;\n\nvar msg2 = null;\nvar datasets = context.get('datasets') || [];\n// each dataset maps to a channel on the chart and consists of a hash with fields\n// topic: the topic name of the channel\n// data: an array of data points {x: x_value, y: y_value}\n// If msg.action == \"preload\" then the topic and payload are ignored and a message is passed\n// on containing the current chart data and msg.action still set to preload\n\nif (msg.action === \"preload\") {\n    // we should have been passed the topics of interest\n    topicsOfInterest = msg.topics;      // null if not provided\n    context.set('topicsOfInterest', topicsOfInterest);\n    // send a message containing the current chart data time range values, leave rest of msg as is\n    msg.payload = datasets;\n    msg.chartMaxPoints = chartMaxPoints;\n    msg.chartTimeSpan = chartTimeSpan;\n} else if (msg.action === \"restore\") {\n    // restoring from persistent memory\n    // step through the given datasets, if any\n    if (Array.isArray(msg.payload)) {\n        for (var i = 0; i < msg.payload.length; i++) {\n            topic = msg.payload[i].topic;\n            // find the matching topic\n            var found = false;\n            for (var k = 0; k < datasets.length; k++) {\n                if (datasets[k].topic == topic) {\n                    // insert the data in front of any that has been acquired since startup\n                    datasets[k].data = msg.payload[i].data.concat(datasets[k].data);\n                    found = true;\n                    break;\n                }\n            }\n            if (!found) {\n                // new topic so make a new dataset and fill it\n                datasets.push({topic: topic, data: msg.payload[i].data});\n            }\n        }\n    }\n    // remember that we have restored in order to enable future writes to persistent store\n    context.set(\"restored\", true);\n    // send a preload action to the chart\n    msg.action = \"preload\";\n    msg.payload = datasets;\n} else if (msg.action === \"load\") {\n    // replace existing data for matching topics\n    for (var j = 0; j < msg.payload.length; j++) {\n        var topic = msg.payload[j].topic;\n        // find it in the chart\n        var found = false;\n        for (var i = 0; i < datasets.length; i++) {\n            if (datasets[i].topic == topic) {\n                datasets[i].data = msg.payload[j].data;\n                found = true;\n                break;\n            }\n        }\n        if (!found) {\n            // new topic so make a new dataset and fill it\n            datasets.push({topic: topic, data: msg.payload[j].data});\n        }\n    }\n    msg = null;         // don't send anything on\n} else {\n    // check whether the topic is one we are interested in\n    if (topicsOfInterest === null  || topicsOfInterest.indexOf(msg.topic) >= 0) {\n        var found = false;\n        // find the right dataset if it already exists\n        for (var i = 0; i < datasets.length; i++) {\n            dataset = datasets[i];\n            if (dataset.topic == msg.topic) {\n                found = true;\n                dataset.data.push(msg.payload);\n                break;\n            }\n        }\n        if (!found) {\n            // new topic so make a new dataset\n            datasets.push({topic: msg.topic, data: [msg.payload]});\n        }\n    } else {\n        // ignore topics that are not of interest\n    }\n    // do not pass on a message to o/p 1, send the datasets to o/p 2 for persistent\n    // storage if required and we have been given data on startup\n    // this is to prevent the persistent store being overwritten before it has been read\n    msg = null;\n    if (context.get(\"restored\")) {\n        msg2 = {payload: datasets};\n    }\n}\n    \n// remove any points that are too old\nif (chartTimeSpan > 0) {\n    var now = new Date();\n    var oldestTimeAllowed = new Date();\n    oldestTimeAllowed.setTime(now.getTime() - (chartTimeSpan));\n    for (var i = 0; i < datasets.length; i++) {\n        var data = datasets[i].data;\n        while (data.length > 0 ) {\n            // convert the x value (in place) to a Date if it is a string\n            if (typeof data[0].x === \"string\") {\n                data[0].x = new Date(data[0].x);\n            }            \n            if (data[0].x < oldestTimeAllowed) {\n                data.shift();\n            } else {\n                break;\n            }\n        }\n    }\n}\n// strip samples off the front if there are now too many\n// charTimeSpan == 0 implies don't do it\nif (chartMaxPoints > 0) {\n    var shifted = false;\n    for (var i = 0; i < datasets.length; i++) {\n        var data = datasets[i].data;\n        while(data.length > chartMaxPoints) {\n            data.shift();\n        }\n    }\n}\ncontext.set('datasets', datasets);\nreturn [msg,msg2];\n\n",
+        "outputs": "2",
+        "noerr": 0,
+        "x": 1170,
+        "y": 460,
+        "wires": [
+            [
+                "655df27a.04acdc"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "527f747e.41a09c",
+        "type": "function",
+        "z": "b4e56ce7.3f1f",
+        "name": "time",
+        "func": "var topic=msg.topic;\nmsg.topic= \"time\";\n\nvar newMsg = { payload:msg.payload.time._seconds,topic:msg.topic };\nreturn newMsg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 740.7142753601074,
+        "y": 424.71437072753906,
+        "wires": [
+            [
+                "b97af9a.2f30808"
+            ]
+        ]
+    },
+    {
+        "id": "b97af9a.2f30808",
+        "type": "join",
+        "z": "b4e56ce7.3f1f",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 730,
+        "y": 520,
+        "wires": [
+            [
+                "f9c08e63.76d9b",
+                "8b3db35c.445ed",
+                "64942cc4.881134"
+            ]
+        ]
+    },
+    {
+        "id": "655df27a.04acdc",
+        "type": "ui_template",
+        "z": "b4e56ce7.3f1f",
+        "group": "9aaa3bd3.ec7668",
+        "name": "chart.js 1",
+        "order": 9,
+        "width": "0",
+        "height": "0",
+        "format": "<!--\nA node-red Dashboard UI template to draw charts using chart.js\nBefore use download the file Chart.bundle.min.js from chartjs.org and \nsave in an appropriate folder (e.g. .node-red/static). \nIn settings.js set httpStatic to the full path of that folder and restart node-red.\nMake sure that the options for 'Pass through messages' and 'Add output messages' \nin this node are cleared.\nFor basic use set the id and size you want in the canvas tag and set chartID to the id\nSetup chartDef as required for your chart (see the chart.js docs)\nIn addition, for each dataset specify in chartDef the message topic that you will use for that channel.\nTo (optionally) provide the chart with a one-off set of data send the node a message with:\nmsg.action = \"load\"\nmsg.payload = [\n{topic: \"mytopic1\", data: [{x: x1,y:y2},{x:x2,y:y2},...]},\n{topic: \"mytopic2\", data: [{x: x1,y:y2},{x:x2,y:y2},...]},\n...]\nWhere mytopic1 and mytopic2 are the the topics specified in the chartDef\n\nTo provide the chart with data incrementally (for a time series for example)\nsend it messages of the form\n{topic: \"mytopic1\", payload: {x:xvalue,y:yvalue}}\nThe chart will be updated as each sample is provided.\nTo limit the growth of the chart set chartMaxPoints and/or chartTimeSpan in the Chart Helper node\nas described at the head of that node.\nIf you find that chart seems to flicker and scroll bars come and go then try \nsetting a size other than auto in the Size specification for this node.\n\nFor Bar charts the x value is the label for the bar and the y value is the bar value\n\nNote that since the chart samples are stored in the browser then the chart will be cleared each\ntime the browser is refreshed (and will be clear on initially opening the view). In order to \nprovided persistency over browser opening and refresh this node may be used in conjunction with\nthe Chart Helper function node.  Details for its use are in the source of that node.\n\nIf your flow includes more that one instance of this script then the line fetching \nChart.bundle.min.js need only be included in one of them\n-->\n<script src=\"/Chart.bundle.min.js\"></script>\n<canvas id=\"myChart1\" width=\"300\" height=\"300\"></canvas>\n<script>\n(function() {\n    var chartID = \"myChart1\";           // set this to the id you have specified in the canvas tag above\n    // setup the chart definition as defined in the chart.js documentation, in addition setting up the topic\n    // for each channel\n    var chartDef = {\n        type: 'line',\n        data: {\n            datasets: [{\n                topic: \"Sin\",    // used here not by chart.js\n                label: \"Sin\",\n                yAxisID: \"1\",\n                fill: false,\n                lineTension: 0,\n                borderColor: \"#0000ff\",\n                pointRadius: 0,\n                pointBorderColor: \"#0000ff\",\n                pointBackgroundColor: \"#0000ff\",\n                backgroundColor:  \"#0000ff\",\n                borderWidth: 1,\n                data: []  // data is written here later\n            }, {\n                topic: \"Cospcos3\",    // used here not by chart.js\n                label: \"Cospcos3\",\n                yAxisID: \"2\",\n                fill: false,\n                lineTension: 0,\n                borderColor: \"#ff0000\",\n                pointRadius: 0,\n                pointBorderColor: \"#ff0000\",\n                pointBackgroundColor: \"#ff0000\",\n                backgroundColor:  \"#ff0000\",\n                borderWidth: 1,\n                data: []  // data is written here later\n            }]\n        },\n        options: {\n            scales: {\n                xAxes: [{\n                    type: 'time',\n                    time: {\n                        unit: 'minute',\n                        unitStepSize: 1,\n                        displayFormats: {\n                            minute: 'HH:mm'\n                        }\n                    }\n                }],\n                yAxes: [{\n                    id: \"1\",\n                    ticks: {\n                        min: -1,\n                        max: 1,\n                        stepSize: 0.2\n                    }\n                }, {\n                    id: \"2\",\n                    ticks: {\n                        min: -2,\n                        max: 2,\n                        stepSize: 0.4\n                    }\n                }]\n            },\n            animation: {\n                duration: 0\n            }\n        }\n    }\n        \n/***** You shouldn't normally need to change anything below here *****/    \n    var myChart = null;\n    var loaded = false;     // indicates whether we have already had a load action\n    var chartTimeSpan;\n    var chartMaxPoints;\n\n    function doChart(msg, scope) {\n        if (!myChart) {\n            // chart does not exist so load the data and create it\n            var ctx = document.getElementById(chartID);\n            myChart = new Chart(ctx, chartDef);     \n        }\n        // chart already exists, update it\n        var datasets = myChart.data.datasets;\n        // is this a load or preload action?\n        if (msg.action === \"load\" || msg.action === \"preload\") {\n            // yes, do not allow preload if we have already had a load\n            // so do it if this is a load or we have not previously had a load\n            if (msg.action === \"load\" || !loaded) {\n                // pick up chartTimeSpan and chartMaxPoints if they have been provided\n                if (typeof msg.chartTimeSpan != 'undefined') {\n                    chartTimeSpan = msg.chartTimeSpan;\n                }\n                if (typeof msg.chartMaxPoints != 'undefined') {\n                    chartMaxPoints = msg.chartMaxPoints;\n                }\n                    \n                // replace existing data for matching topics\n                for (var j = 0; j < msg.payload.length; j++) {\n                    var topic = msg.payload[j].topic;\n                    // find it in the chart\n                    for (var i = 0; i < datasets.length; i++) {\n                        if (datasets[i].topic == topic) {\n                            // if stripping old samples by time is required then ensure the x value is Date\n                            if (chartTimeSpan > 0 ) {\n                                var data = msg.payload[j].data;\n                                for (var k = 0; k < data.length; k++) {\n                                    if (typeof data[k].x === \"string\") {\n                                        data[k].x = new Date(data[k].x);\n                                    }\n                                }\n                            }\n                            if (chartDef.type !== \"bar\") {\n                                datasets[i].data = msg.payload[j].data;\n                            } else {\n                                // bar chart so x values must go to labels and y values to dataset\n                                datasets[i].data = [];\n                                myChart.data.labels = [];\n                                var data = msg.payload[j].data;\n                                for (var k = 0; k < data.length; k++) {\n                                    datasets[i].data.push(data[k].y);\n                                    myChart.data.labels.push(data[k].x);\n                                }\n                            }\n                            break;\n                        }\n                    }\n                }\n            }\n            if (msg.action === \"load\") loaded = true;\n            myChart.update();\n        } else {\n            // does the topic match one of the datasets?\n            for (var i = 0; i < datasets.length; i++) {\n                if (datasets[i].topic == msg.topic) {\n                    // if stripping old samples by time is required then ensure the x value is Date\n                    if (chartTimeSpan > 0 && typeof msg.payload.x === \"string\") {\n                        msg.payload.x = new Date(msg.payload.x);\n                    }\n                    if (chartDef.type !== \"bar\") {\n                        datasets[i].data.push(msg.payload);\n                    } else {\n                         // bar chart so x value must go to labels and y value to dataset\n                        datasets[i].data.push(msg.payload.y);\n                        myChart.data.labels.push(msg.payload.x);\n                    }\n                    myChart.update();\n                    break;\n                }\n            }\n        }\n        // strip off samples older than now\n        // charTimeSpan == 0 implies don't do it\n        var shifted = false;\n        if (chartTimeSpan > 0) {\n            var now = new Date();\n            var oldestTimeAllowed = now - chartTimeSpan;\n            for (var i = 0; i < datasets.length; i++) {\n                dataset = datasets[i];\n                while(dataset.data[0] && getTime(dataset.data[0].x) < oldestTimeAllowed) {\n                    dataset.data.shift();\n                    shifted = true;\n                }\n            }\n        }\n        // strip samples off the front if there are now too many\n        // charTimeSpan == 0 implies don't do it\n        if (chartMaxPoints > 0) {\n            for (var i = 0; i < datasets.length; i++) {\n                dataset = datasets[i];\n                while(dataset.data.length > chartMaxPoints) {\n                    dataset.data.shift();\n                    shifted = true;\n                }\n            }\n        }\n        if (shifted) {\n            myChart.update();\n        }\n    };\n\n    // gets the time of an x value, works for strings or Date types\n    function getTime(x) {\n        if (typeof x === \"string\") x = new Date(x);\n        return x.getTime();\n    }\n    \n    // builds the preload message for sending back to the chart helper\n    function preloadMsg() {\n        var preMsg = {action: \"preload\", payload: \"preload\"};\n        // build array of topics in chart\n        var topics = [];\n        for (var i=0; i<chartDef.data.datasets.length; i++) {\n            topics.push(chartDef.data.datasets[i].topic);\n        }\n        preMsg.topics = topics;\n        // has the chart already been created\n        if (myChart) {\n            preMsg.lastXValue = 1;\n        } else {\n            preMsg.lastXValue = 0;\n        }\n        return preMsg;\n    }\n\n    (function(scope) {\n        // this code gets run when the a view is opened on the node in the browser\n        // send a preload message back to node red to ask it send\n        // us a complete set of data. Pass down max points and time span to the helper node for it to use\n        // plus an array of the topics of interest\n        scope.send( preloadMsg() );\n        \n        scope.$watch('msg', function(msg) {\n            if (msg) {\n                doChart(msg, scope);\n            }\n        });\n    })(scope);\n})();\n</script>\n",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "templateScope": "local",
+        "x": 1160,
+        "y": 380,
+        "wires": [
+            [
+                "9575dc68.a2013"
+            ]
+        ]
+    },
+    {
+        "id": "3a0712aa.60e94e",
+        "type": "inject",
+        "z": "b4e56ce7.3f1f",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 222.14273071289062,
+        "y": 427.2856502532959,
+        "wires": [
+            [
+                "943f46f4.aaba98"
+            ]
+        ]
+    },
+    {
+        "id": "483f07f.c6633f8",
+        "type": "ui_chart",
+        "z": "b4e56ce7.3f1f",
+        "name": "Temperature",
+        "group": "9aaa3bd3.ec7668",
+        "order": 1,
+        "width": "",
+        "height": "",
+        "label": "Faces",
+        "chartType": "line",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "No Data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": "",
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": true,
+        "outputs": 1,
+        "x": 1150,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "64942cc4.881134",
+        "type": "function",
+        "z": "b4e56ce7.3f1f",
+        "name": "",
+        "func": "// This function reformats the timeseries data into an array that \n// Chart.js (See http://www.chartjs.org/ ) will plot\n// The node-red-dashboard Chart node uses Chart.js \n\n// The Array has this structure, inserting the first element as a template.\nvar ChartData = [ {\"series\":[\"Data\"],\n                   \"data\":[[{\"x\":msg.payload.time,\"y\":msg.payload.faces}]],\n                   \"labels\":[\"Data\"]}];\n\n\nmsg.payload = ChartData;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 930,
+        "y": 520,
+        "wires": [
+            [
+                "483f07f.c6633f8",
+                "91d863e4.0d463"
+            ]
+        ]
+    },
+    {
+        "id": "91d863e4.0d463",
+        "type": "debug",
+        "z": "b4e56ce7.3f1f",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1090,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "26237b13.26b7a4",
+        "type": "comment",
+        "z": "b4e56ce7.3f1f",
+        "name": "Historical Face Count Attempt (NOT WORKING)",
+        "info": "",
+        "x": 300,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "32b17aed.3ba9d6",
+        "type": "comment",
+        "z": "2bc7b419.ae6ffc",
+        "name": "Test - Bluemix to Pi",
+        "info": "",
+        "x": 170,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "7cb298cc.b0a3c8",
+        "type": "worldmap",
+        "z": "deb0d57.1c46528",
+        "name": "",
+        "lat": "-33.88410",
+        "lon": "151.19962",
+        "zoom": "18",
+        "layer": "OSM",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "panit": "true",
+        "hiderightclick": "false",
+        "coords": "none",
+        "path": "",
+        "x": 630,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "119db017.3164e",
+        "type": "inject",
+        "z": "deb0d57.1c46528",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "x": 270,
+        "y": 840,
+        "wires": [
+            [
+                "4505d051.10966"
+            ]
+        ]
+    },
+    {
+        "id": "4505d051.10966",
+        "type": "template",
+        "z": "deb0d57.1c46528",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<iframe src=\"../worldmap\" height=800px width=100%></iframe>",
+        "x": 470,
+        "y": 840,
+        "wires": [
+            [
+                "8571f0b8.057a1"
+            ]
+        ]
+    },
+    {
+        "id": "9bb1399e.b735c8",
+        "type": "inject",
+        "z": "deb0d57.1c46528",
+        "name": "",
+        "topic": "",
+        "payload": "{\"name\":\"CB11-NW-LV1-DOOR1\", \"lat\":-33.88410, \"lon\":151.19962,\"label\":\"CB11 NW DOOR 1\"}",
+        "payloadType": "json",
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "x": 270,
+        "y": 740,
+        "wires": [
+            [
+                "7cb298cc.b0a3c8"
+            ]
+        ]
+    },
+    {
+        "id": "8571f0b8.057a1",
+        "type": "link out",
+        "z": "deb0d57.1c46528",
+        "name": "Location Map Out",
+        "links": [
+            "d5a97a0a.5c8108"
+        ],
+        "x": 635,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "fd22e7c7.c72068",
+        "type": "comment",
+        "z": "deb0d57.1c46528",
+        "name": "World Map Node Setup",
+        "info": "",
+        "x": 280,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "b012f990.d392e8",
+        "type": "comment",
+        "z": "deb0d57.1c46528",
+        "name": "Embed Map on Dash",
+        "info": "",
+        "x": 280,
+        "y": 800,
+        "wires": []
+    }
+]
