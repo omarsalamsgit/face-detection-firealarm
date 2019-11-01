@@ -11,7 +11,7 @@ The follow repository contains the proof of concept files, including the flows r
 # Running The Script
 
 ```sh
-mm 
+python face_detection.py --prototxt deploy.prototxt.txt --model res10_300x300_ssd_iter_1400000.caffemodel
 ```
 
 # Current Functionality 
